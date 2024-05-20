@@ -46,19 +46,32 @@ data = {'Испытание КП': 2,
 true_ = 0
 false_ = 0
 data_list = list(data.keys())
-random.shuffle(data_list)
 
-for item in data_list:
+
+while len(data_list) != 0:
+    random.shuffle(data_list)
+    item = data_list[0]
     question = int(input(f'{item}-? ___'))
     if data[item] == question:
         print('Верно! =)')
         true_ += 1
+        del data_list[0]
     else:
         print('Не верно! =(')
         false_ += 1
     print('-' * 20)
 
-print(true_, false_)
+# for item in data_list:
+#     question = int(input(f'{item}-? ___'))
+#     if data[item] == question:
+#         print('Верно! =)')
+#         true_ += 1
+#     else:
+#         print('Не верно! =(')
+#         false_ += 1
+#     print('-' * 20)
+#
+# print(true_, false_)
 
 if __name__ == '__main__':
     ...
