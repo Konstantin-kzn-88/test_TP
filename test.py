@@ -71,7 +71,7 @@ while len(data_list) != 0:
 #         false_ += 1
 #     print('-' * 20)
 #
-# print(true_, false_)
+print(true_, false_)
 
 if __name__ == '__main__':
     ...
