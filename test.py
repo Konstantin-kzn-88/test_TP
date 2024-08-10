@@ -57,7 +57,7 @@ while len(data_list) != 0:
         true_ += 1
         del data_list[0]
     else:
-        print('Не верно! =(')
+        print(f'Не верно! =(   {data[item]}')
         false_ += 1
     print('-' * 20)
 
